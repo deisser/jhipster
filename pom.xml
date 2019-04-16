@@ -9,12 +9,37 @@
     <name>Jhipster</name>
 
     <repositories>
-        <!-- jhipster-needle-maven-repository -->
-    </repositories>
-
-    <pluginRepositories>
-        <!-- jhipster-needle-maven-plugin-repository -->
-    </pluginRepositories>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>jfrog-releases</name>
+          <url>https://repo.jfrog.org/artifactory/jfrog-releases</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>third-party-snapshots</name>
+          <url>https://repo.jfrog.org/artifactory/third-party-snapshots</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>plugins-releases</name>
+          <url>https://repo.jfrog.org/artifactory/plugins-releases</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>plugins-snapshots</name>
+          <url>https://repo.jfrog.org/artifactory/plugins-snapshots</url>
+        </pluginRepository>
+      </pluginRepositories>
 
     <!-- jhipster-needle-distribution-management -->
 
